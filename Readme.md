@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [Саша Косарев](https://up.htmlacademy.ru/htmlcss/34/user/2058127).
+* Студент: [Александр Косарев](https://up.htmlacademy.ru/htmlcss/34/user/2058127).
 * Наставник: Ольга Тюлихова (https://htmlacademy.ru/profile/id523263).
 
 ---
