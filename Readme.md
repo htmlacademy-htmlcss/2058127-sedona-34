@@ -1,11 +1,8 @@
 # Личный проект «Седона»
 
-<<<<<<< HEAD
 * Студент: [Александр Косарев](https://up.htmlacademy.ru/htmlcss/34/user/2058127).
 >>>>>>> 3a817ad2ce0dd0cbb52f5539b430910030280c41
 * Наставник: Ольга Тюлихова (https://htmlacademy.ru/profile/id523263).
-
----
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
