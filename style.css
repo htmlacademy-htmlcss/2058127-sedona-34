@@ -3,179 +3,84 @@ body {
 }
 
 nav {
-position: absolute;
-height: 65px;
-left: 0px;
-right: 0px;
-top: 0px;
+
 }
 
-.navigation-link-1 {
-    width: 68px;
-    height: 26px;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: capitalize;
-    color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;   
+.navigation-link-main-page {
+    
 }
 
-.navigation-link-2 {
-width: 82px;
-height: 26px;
-/* Headings/Heading 4 */
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 26px;
-text-transform: capitalize;
-color: #000000;
-flex: none;
-order: 1;
-flex-grow: 0;
+.navigation-link-about {
+
 }
 
-.navigation-link-3 {
-    width: 93px;
-    height: 26px;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: capitalize;
-    color: #000000;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+.navigation-link-catalog {
+    
 }
 
-.navigation-link-4 {
-    position: absolute;
-    width: 18.05px;
-    height: 18.1px;
-    left: calc(50% - 18.05px/2 + 0px);
-    top: calc(50% - 18.1px/2 - 0.5px);
-    background: #000000;
+.navigation-link-search {
+    
 }
 
-.navigation-link-5 {
-position: absolute;
-width: 18.05px;
-height: 17px;
-left: calc(50% - 18.05px/2 - 0.46px);
-top: calc(50% - 17px/2 - 0.5px);
-background: #000000;
+.navigation-link-like {
+
+}
+
+.button {
+    text-transform: uppercase;  
+
 }
 
 
 .hero {
-    position: absolute;
-    left: 24.17%;
-    right: 24.17%;
-    top: 71.45%;
-    bottom: 19.17%;
-
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-
     text-align: center;
-    text-transform: uppercase;
-    
-    color: #000000;
+    text-transform: uppercase;     
 }
 
 .hero-description {
-    position: absolute;
-left: 22.75%;
-right: 22.75%;
-top: 84.88%;
-bottom: 11.73%;
+    text-align: center;
 
-/* Texts/Text basic */
-
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-/* identical to box height, or 118% */
-
-text-align: center;
-
-/* Texts/second */
-
-color: #333333;
 }
 
 .img-index-background {
 
 }
 
-footer {
-position: absolute;
-height: 120px;
-left: 40px;
-right: 40px;
-bottom: 0px;
+
+
+.wonder {
+    text-transform: uppercase; 
+    text-align: center;    
 }
 
-.subscription {
-    position: absolute;
-    left: 33.17%;
-    right: 33.17%;
-    top: 22.87%;
-    bottom: 68.37%;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    color: #FFFFFF;
+wonder-description {
+
+}
+
+footer {
+    text-align: center;   
+}
+
+.subscribe {
+    text-align: center;   
 }
 
 .footer-description {
-    position: absolute;
-    left: 30.25%;
-    right: 30.17%;
-    top: 38.69%;
-    bottom: 48.66%;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;   
+    text-align: center;   
 }
 
-.vk {}
+.vk {
+    
+}
 
-.tg{}
+.tg{
+    
+}
 
-.yt{}
+.yt{
+    
+}
 
 .number {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;    
+    text-align: center;   
 }

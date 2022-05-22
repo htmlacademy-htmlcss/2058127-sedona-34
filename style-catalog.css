@@ -1,0 +1,33 @@
+
+
+.button.about {
+    background-color: #756157;
+    color: white;
+    text-align: center;
+}
+
+.button.favorite {
+    background-color: #82B3D3;
+    color: white;
+}
+
+.first-choice {
+    width: 250px;
+    border: solid;
+    
+}
+
+.second-choice {
+    width: 250px;
+    border: solid;
+}
+
+.third-choice {
+    width: 250px;
+    border: solid;
+}
+
+.fourth-choice {
+    width: 250px;
+    border: solid;
+}
