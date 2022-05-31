@@ -5,98 +5,140 @@
     <link rel="stylesheet" href="style-catalog.css">
     <title>HTML Academy: Седона</title>
   </head>
+  <body>
   <header class="page-header">
-    <nav class="navigation">
-      <a class="navigation-link-main-page" href="index.html">Главная</a>
-      <a class="navigation-link-about" href="#">О Седоне</a>
-      <a class="navigation-link-catalog" href="#">Гостиницы</a>
-      <a class="navigation-link-search" href="#">Лупа</a> 
-      <a class="navigation-link-like" href="#">Сердце <sup>12</sup></a>
+    <div class="logo">
+     <p>Логотип</p> 
+    </div>
+    <nav class="navigation-1">
+      <a href="index.html">Главная</a>
+      <a href="#">О Седоне</a>
+      <a href="catalog.html">Гостиницы</a>
+    </nav>
+    <nav class="navigation-2"> 
+      <a class="navigation-link-search" href="#">Поиск</a> 
+      <a class="navigation-link-like" href="#">Избранное<sup>12</sup></a>
       <a class="button" href="#">Хочу сюда!</a>
     </nav>
   </header>
   <main>
+    <img src="images/index-background.jpg"img-index-background" alt="Красивый задний фон">
     <div class="hero">
        <h1 class="hero-title">Гостиницы Седоны</h1>
-       <p>Гостиницы</p>
+       <ul>
+         <li class="navigation-home-page"><a href="index.html">Домик с ссылкой на главную</a></li>
+         <li>Гостиницы</li>
+       </ul>
       <section class="infrastructure">
-        <h1>Инфраструктура:</h1>
+        <h2>Инфраструктура:</h2>
        <p><input type="checkbox" name="waterpool" value="Бассейн" checked>Бассейн</p>
        <p><input type="checkbox" name="parking" value="Парковка" checked>Парковка</p>
        <p><input type="checkbox" name="wi-fi" value="Wi-Fi">Wi-Fi</p>
       </section>
       <section class="type-of-house">
-        <h1>Тип Жилья:</h1>
+        <h2>Тип Жилья:</h2>
        <p><input type="checkbox" name="Гостиница" value="Гостиница" checked>Гостиница</p>
        <p><input type="checkbox" name="Мотель" value="Мотель">Мотель</p> 
        <p><input type="checkbox" name="Апартаменты" value="Апартаменты">Апартаменты</p>    
       </section> 
-      <section>
-       <legend>
-         <p>Стоимость,₽:</p>
-           <input type="range" min="0" max="10000" step="1" value="100">
-             <p>
-               <span>0</span>
-               <span>9000</span>
-             </p>
-       </legend>
-       <p>Применить</p>
-       <p>Сбросить</p>
-      </section>
-    </div>
+      <div class="wrapper">
+        <p>
+        <span>0</span>
+        <span>9000</span>
+        </p>
+        <div class="range">
+        <div class="range__bar">
+          <span class="range__bar-inner"></span>
+        </div>
+         <button type="button" class="range__button range__button--left" aria-label="Стоимость от"></button>
+         <button type="button" class="range__button range__button--right" aria-label="Стоимость до"></button>
+       </div>
+     </div>
     <section class="main-hotels">
-     <h1>Найдено гостиниц: 38</h1>
+     <h2>Найдено гостиниц: 38</h2>
      <select>
        <option checked>Сначала дешёвые</option>
        <option>Сначала дорогие</option>
+       <img src="images/icon-table.png" class="icon-table" alt="Упорядоченный список">
+       <img src="images/icon-slideshow.png" class="icon-slideshow" alt="Слад-шоу">
+       <img src="images/icon-list.png" class="icon-list" alt="Список столбиком">
      </select>
-     <aside>
-       <legend class="first-choice">
-         <h1>Amara Resort & Spa</h1>
-         <p>Гостиница От 4000 ₽</p>
+     <div>
+       <section class="first-choice">
+         <img src="images/Amara-resort.jpg" class="Amara-resort" alt="Гостиница "Amara Resort &Spa"">
+         <h3><a href="#">Amara Resort & Spa</a></h3>
+         <p>Гостиница</p> 
+         <p>От 4000 ₽</p>
          <input type="button" name="about" class="button about" value="Подробнее">
          <input type="button" name="favorite" class="button favorite" value="В избранное">
+         <div class="stars-2">
+          <img src="images/star.png" alt="Одна звезда">
+          <img src="images/star.png" alt="Две звезды">
+          <img src="images/star.png" alt="Три звезды">
+          <img src="images/star.png" alt="Четыре звезды">
+        </div>
          <p>Рейтинг:8,5</p>
-       </legend>
-       <legend class="second-choice">
-        <h1>Villas at Poco Diablo</h1>
-        <p>Гостиница От 5000 ₽</p>
+       </section>
+       <section class="second-choice">
+         <img src="images/Villas-at-poco.jpg" class="Villas-at-poco" alt="Гостиница "Villas at Poco Diablo"">
+        <h3><a href="#">Villas at Poco Diablo</a></h3>
+        <p>Гостиница</p> 
+        <p>От 5000 ₽</p>
         <input type="button" name="about" class="button about" value="Подробнее">
         <input type="button" name="favorite" class="button favorite" value="В избранное">
+        <div class="stars-2">
+          <img src="images/star.png" alt="Одна звезда">
+          <img src="images/star.png" alt="Две звезды">
+          <img src="images/star.png" alt="Три звезды">
+          <img src="images/star.png" alt="Четыре звезды">
+        </div>
         <p>Рейтинг:9,2</p>
-      </legend>
-      <legend class="third-choice">
-        <h1>Desert Quail Inn</h1>
-        <p>Гостиница От 2500 ₽</p>
+      </section>
+      <section class="third-choice">
+        <img src="images/Desert-quali.jpg" class="Desert-quali" alt="Гостиница "Desert Quali inn"">
+        <h3><a href="#">Desert Quail Inn</a></h3>
+        <p>Гостиница</p> 
+        <p>От 2500 ₽</p>
         <input type="button" name="about" class="button about" value="Подробнее">
         <input type="button" name="favorite" class="button favorite" value="В избранное">
+        <div class="stars-3">
+          <img src="images/star.png" alt="Одна звезда">
+          <img src="images/star.png" alt="Две звезды">
+          <img src="images/star.png" alt="Три звезды">
+        </div>
         <p>Рейтинг:6,9</p>
-      </legend>
-      <legend class="fourth-choice">
-        <h1>GreenTree Inn</h1>
-        <p>Гостиница От 1500 ₽</p>
+      </section>
+      <section class="fourth-choice">
+        <img src="images/GreenTree.jpg" class="GreenTree-inn" alt="Гостиница "GreenTree Inn"">
+        <h3><a href="#">GreenTree Inn</a></h3>
+        <p>Гостиница</p> 
+        <p>От 1500 ₽</p>
         <input type="button" name="about" class="button about" value="Подробнее">
         <input type="button" name="favorite" class="button favorite" value="В избранное">
+        <div class="stars-4">
+          <img src="images/star.png" alt="Одна звезда">
+          <img src="images/star.png" alt="Две звезды">
+        </div>
         <p>Рейтинг:5,0</p>
-      </legend>
-     </aside>
+      </section>
+    </div>
     </section>
-    <section>
-      <h1 class="wonder">Заинтерисовались?</h1>
-      <p class="wonder-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    </section>  
   </main>
   <footer>
-    <h1 class="subscribe">Подпишитесь на рассылку</h1>
+    <h2 class="subscribe">Подпишитесь на рассылку</h2>
     <p class="footer-description">Только полезная информцаия и никакого спама, честное бойскаутское!</p>
-       <section>
-        <input class="sub" type="email" value="Ваш e-mail"><b class="sub">Подписаться</b>
-       </section>
-      <section>
-       <a href="https://vk.com/htmlacademy"><img src="#" class="vk" alt="Ссылка на группу ВКонтакте"></a>
-       <a href="https://t.me/htmlacademy"><img src="#" class="tg" alt="Ссылка не Телеграмм канал"></a>
-       <a href="https://www.youtube.com/user/htmlacademyru"><img src="#" class="yt" alt="Ссылка на YouTube канал"></a>
-      </section>
-    <p class="number">+7 (812) 812-12-12</p>
-  </footer>
+     <section>
+      <form>
+       <input class="sub" type="email" value="Ваш e-mail"><a class="sub">Подписаться</a>
+      </form> 
+    </section>
+    <section>
+     <a href="https://vk.com/htmlacademy"><img src="images/VK.png" class="vk" alt="Ссылка на группу ВКонтакте"></a>
+     <a href="https://t.me/htmlacademy"><img src="images/TG.png" class="tg" alt="Ссылка не Телеграмм канал"></a>
+     <a href="https://www.youtube.com/user/htmlacademyru"><img src="images/YT.png" class="yt" alt="Ссылка на YouTube канал"></a>
+     <a href="tel:+78218211212" class="number">+7 (812) 812-12-12</a>
+     <a href="https://htmlacademy.ru"><img src="images/html-Academy.png" class="logo-academy" alt="Академия HTML"></a>
+    </section>
+   </footer>
+  </body>
 </html>
