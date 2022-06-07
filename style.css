@@ -6,61 +6,276 @@ body {
     background: #F2F2F2;
 }
 
-header {}
+header {
+
+}
 
 .logo {
     
-
 }
 
 main {
     
-
 }
 
 .img-index-background {
     
 }
 
-.navigation-1 {
-    
-
-}
+.main-navigation {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none;    
+  }
+  
+.user-navigation {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none;
+  }
 
 .button {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase;  
-
+    text-decoration: none; 
 }
 
 
 .hero {
-    text-align: center;
-    text-transform: uppercase;     
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;     
 }
 
 .hero-description {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+
+}
+
+.benefits  {
+
+}
+
+.city h2 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
     text-align: center;
-
+    text-transform: uppercase;
 }
 
-.wonder {
-       
+.city p {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
 }
 
-wonder-description {
+.house h2{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase; 
+}
 
+.house p{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.food h2{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.food p{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+}
+
+.gifts h2{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gifts p{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.numbers p{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    }
+
+.devil-bridge {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000; 
+}
+
+.square {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000; 
+}
+
+.road {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000; 
+}
+
+.grand-canyon {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000; 
+}
+
+.wonder h2 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;      
+}
+
+.wonder-description {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+.wonder-search {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none; 
 }
 
 footer {
+    text-align: center;     
+}
+
+.subscription {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
     text-align: center;    
 }
 
-.subscribe {
-    text-align: center;   
+.footer-description {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;   
 }
 
-.footer-description {
-    text-align: center;   
+input.sub {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;  
+}
+
+.sub {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px; 
 }
 
 .vk {
@@ -76,5 +291,13 @@ footer {
 }
 
 .number {
-    
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+text-decoration: none;    
 }
