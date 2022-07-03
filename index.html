@@ -1,99 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
-    <header class="page-header">
+    <div class="container">
+      <header class="page-header">
         <div class="logo">
-         <img src="images/logo.svg">
+          <img src="images/logo.svg" width="139" height="70" alt="Логотип">
         </div>
         <nav class="main-navigation">
-         <a href="#">Главная</a>
-         <a href="#">О Седоне</a>
-         <a href="catalog.html">Гостиницы</a>
+          <a href="index.html">Главная</a>
+          <a href="#">О Седоне</a>
+          <a href="catalog.html">Гостиницы</a>
         </nav>
-        <nav class="user-navigation"> 
-          <img src="images/search.svg" class="search"><a href="#"></a> 
-          <img src="images/favorite.svg" class="favorite"><a href="#"><sup>12</sup></a>
-          <a class="button" href="#">Хочу сюда!</a>
+        <nav class="user-navigation">
+          <div class="search"><a href="#" alt="Поиск"></a></div>
+          <a><img src="images/favorite.svg" class="favorite"><a class="total-favorite" href="#"
+              alt="Избранное"><sup>12</sup></a>
+            <a class="button" href="#">Хочу сюда!</a>
         </nav>
-    </header>
-    <main class="welcome">
-       <!--<img src="images/index-background.jpg" class="img-index-background" alt="Красивый задний фон">
-       <img src="images/welcome.svg" class="welcome" alt="Добро пожаловать">
-       <img src="images/to-the-gorgeous.png" class="to-the-gorgeous" alt="Великолепное место">
-       <img src="images/sedona-main-img.png" class="sedona-main-img" alt="Седона"> -->
-       <h1 class="hero"><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></h1>
-       <p class="hero-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-     <section class="benefits">
-       <article class="city">
-         <h2>Настоящий городок</h2>
-         <p>— №1 —</p>
-         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-         <!--<img src="images/benefits-img.png" class="benefits-img" alt="Седона - настоящий городок"> -->
-       </article>
-       <article class="house">
-         <!--<img src="images/house.svg" class="house-img" alt="Жильё">  -->
-         <h2>Жильё</h2>
-         <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </article>
-        <article class="food">
-          <!--<img src="images/food.svg" class="food-img" alt="Еда"> -->
-          <h2>Еда</h2>
-          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-        </article>
-        <article class="gifts">
-          <!--<img src="images/gifts.svg" class="gifts-img" alt="Сувениры"> -->
-          <h2>Сувениры</h2>
-          <p>Не только китайского, но и настоящего местного производства!</p>
-        </article>
-     </section>
-     <section class="numbers">
-         <!--<img src="images/number-2-img.png" class="number-2-img" alt="Мост Дьявола"> -->
-         <h2 class="devil-bridge">Там есть мост дьявола</h2>
-         <p>— №2 —</p>
-         <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-       <article>
-         <h2 class="square">Небольшая площадь</h2>
-         <p>— №3 —</p>
-         <p>Все достопримечательности находятся очень близко</p>
-       </article>
-       <article>
-          <h2 class="road">Красивая дорога</h2>
-          <p>— №4 —</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-       </article>
-       <article>
-          <h2 class="grand-canyon">Мало туристов</h2>
-          <p>— №5 —</p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-       </article>
-      </section> 
-      <section class="wonder">
-        <h2>Заинтерисовались?</h2>
-        <p class="wonder-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="wonder-search" href="#">Поиск Гостиницы в Седоне</a>
-      </section>     
-   </main>
-   <footer>
-    <!--<img src="images/footer-bg-img.png" class="footer-bg-img" alt="Красоты Седоны"> -->
-    <h2 class="subscription">Подпишитесь на рассылку</h2>
-    <p class="footer-description">Только полезная информцаия и никакого спама, честное бойскаутское!</p>
-     <section>
-      <form>
-       <input class="sub" type="email" value="Ваш e-mail"><a class="sub">Подписаться</a>
-      </form> 
-    </section>
-    <section>
-     <a href="https://vk.com/htmlacademy"><img src="images/vk.svg" class="vk" alt="Ссылка на группу ВКонтакте"></a>
-     <a href="https://t.me/htmlacademy"><img src="images/tg.svg" class="tg" alt="Ссылка не Телеграмм канал"></a>
-     <a href="https://www.youtube.com/user/htmlacademyru"><img src="images/yt.svg" class="yt" alt="Ссылка на YouTube канал"></a>
-     <a href="tel:+78128121212" class="number">+7 (812) 812-12-12</a>
-     <a href="https://htmlacademy.ru"><img src="images/html-academy.svg" class="logo-academy" alt="Академия HTML"></a>
-    </section>
-   </footer>
- </body>
+      </header>
+      <main>
+        <div class="divider">
+          <span class="welcome"></span>
+          <span class="divider-bottom"></span>
+        </div>
+        <div class="hero">
+          <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="hero-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+        <section class="benefits">
+          <article class="city">
+            <h2 class="city-title">Настоящий городок</h2>
+            <p class="city-number">— №1 —</p>
+            <p class="city-about">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </article>
+          <div class="city-img">
+            <img src="images/photo-main-1.svg" alt="Фото города">
+          </div>
+          <article class="house">
+            <img src="images/house.svg" class="house-img" alt="Жильё">
+            <h2>Жильё</h2>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </article>
+          <article class="food">
+            <img src="images/food.svg" class="food-img" alt="Еда">
+            <h2>Еда</h2>
+            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </article>
+          <article class="gifts">
+            <img src="images/gifts.svg" class="gifts-img" alt="Сувениры">
+            <h2>Сувениры</h2>
+            <p>Не только китайского, но и настоящего местного производства!</p>
+          </article>
+        </section>
+        <section class="locations">
+          <img src="images/number-2-img.png" class="number-2-img" alt="Мост Дьявола" height="384" width="800">
+          <article class="devil-bridge">
+            <h2>Там есть мост дьявола</h2>
+            <h3>— №2 —</h3>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </article>
+          <article class="square">
+            <h2>Небольшая площадь</h2>
+            <h3>— №3 —</h3>
+            <p>Все достопримечательности находятся очень близко</p>
+          </article>
+          <article class="road">
+            <h2>Красивая дорога</h2>
+            <h3>— №4 —</h3>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </article>
+          <article class="grand-canyon">
+            <h2>Мало туристов</h2>
+            <h3>— №5 —</h3>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </article>
+        </section>
+        <section class="wonder">
+          <h2>Заинтерисовались?</h2>
+          <p class="wonder-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+            гостиниц в Седоне</p>
+          <a class="wonder-search" href="#">Поиск Гостиницы в Седоне</a>
+        </section>
+      </main>
+      <footer>
+
+        <!--<img src="images/footer-bg-img.png" class="footer-bg-img" alt="Красоты Седоны"> -->
+        <div class="subscription">
+          <h2 class="sub-title">Подпишитесь на рассылку</h2>
+          <p class="sub-description">Только полезная информцаия и никакого спама, честное бойскаутское!</p>
+
+          <section class="form">
+            <form>
+              <input class="input" type="email" value="e-mail"><input class="submit" type="submit" value="Подписаться">
+            </form>
+          </section>
+        </div>
+        <section class="info">
+          <a href="https://vk.com/htmlacademy"><img src="images/vk.svg" class="vk" alt="Ссылка на группу ВКонтакте"></a>
+          <a href="https://t.me/htmlacademy"><img src="images/tg.svg" class="tg" alt="Ссылка не Телеграмм канал"></a>
+          <a href="https://www.youtube.com/user/htmlacademyru"><img src="images/yt.svg" class="yt"
+              alt="Ссылка на YouTube канал"></a>
+          <a href="tel:+78128121212" class="number">+7 (812) 812-12-12</a>
+          <a href="https://htmlacademy.ru"><img src="images/html-academy.svg" class="logo-academy"
+              alt="Академия HTML"></a>
+        </section>
+      </footer>
+    </div>
+  </body>
+
 </html>
