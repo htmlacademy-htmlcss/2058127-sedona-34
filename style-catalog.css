@@ -1,29 +1,35 @@
+body {
+  font-family: 'PT Sans';
+  background: #E5E5E5;
+  margin: auto;
+}
+
 .container {
+  height: 3316px;
   width: 1200px;
   margin: auto;
+  background-color: aliceblue;
 }
 
 header {
   display: inline-block;
-  height: 70px;
+  height: 65px;
   width: 1200px;
   left: 40px;
   background: #FFFFFF;
 }
 
 .logo {
-  right: 82.58%;
-  bottom: 0%;
-  left: 70px;
+  position: relative;
+  height: 70px;
+  width: 139px;
+  z-index: 1;
 }
 
-
 .main-navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 20px 17px;
-  gap: 34px;
+  position: absolute;
+  padding-top: 20px;
+  padding-left: 239px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -32,17 +38,15 @@ header {
   text-decoration: none;
   height: 66px;
   width: 390px;
-  left: 239px;
+  top: 0;
   color: #000000;
 }
 
 .user-navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  position: absolute;
   width: 84px;
   height: 66px;
-  right: 249.87px;
+  top: 0;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -53,16 +57,24 @@ header {
 }
 
 .search {
-  width: 42px;
-  height: 66px;
-  flex: none;
-  order: 0;
-  flex-grow: 1;
+  background-image: url(images/search.svg);
+  position: absolute;
+  width: 18.05px;
+  height: 18.1px;
+  top: 23.45px;
+  left: 878.11px;
+  bottom: 23.45px;
+  right: 343.84px;
 }
 
 .favorite {
-  width: 42px;
-  height: 66px;
+  position: absolute;
+  width: 18.05px;
+  height: 18.1px;
+  top: 23.45px;
+  left: 919.65px;
+  bottom: 23.45px;
+  right: 343.84px;
   flex: none;
   order: 1;
   flex-grow: 1;
@@ -75,8 +87,10 @@ header {
   position: absolute;
   width: 19.05px;
   height: 13px;
-  left: calc(50% - 19.05px/2 + 13px);
-  top: calc(50% - 13px/2 - 9px);
+  top: 15px;
+  left: 932.13px;
+  bottom: 3280px;
+  right: 287.87px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -88,24 +102,39 @@ header {
 }
 
 .button {
+  position: absolute;
+  height: 37px;
+  width: 160px;
+  left: 970px;
+  top: 14px;
   font-family: 'PT Sans';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 160px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  width: 160px;
   background: #756157;
   border-radius: 4px;
-  height: 20px;
-  left: 15px;
-  right: 15px;
-  top: calc(50% - 20px/2 + 0.5px);
-  display: flex;
   align-items: center;
   color: #FFFFFF;
+}
+
+main {
+  position: absolute;
+  height: 2720px;
+  width: 1200px;
+  top: 65px;
+  background: #FFFFFF;
+}
+
+.hero {
+  background-image: url(images/catalog-back-g.svg);
+  position: absolute;
+  top: 65px;
+  width: 1199.53px;
+  height: 403px;
 }
 
 .hero-title {
@@ -152,6 +181,12 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+.main-hotels {
+  position: absolute;
+  top: 468px;
+  left: 0;
 }
 
 .main-hotels h2 {
@@ -254,10 +289,6 @@ p {
   text-transform: uppercase;
   color: #333333;
 }
-
-
-
-
 
 .wrapper {
   width: 300px;
