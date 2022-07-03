@@ -1,49 +1,36 @@
-html {
+body {
+  font-family: 'PT Sans';
   background: #E5E5E5;
-  width: 1280px;
-  height: 3315px;
+  margin: auto;
 }
 
-body {
-  background: #FFFFFF;
-  margin: 0 auto;
-  width: 1200px;
+.container {
   height: 3315px;
-  left: 40px;
-  top: 0px;
-  border-radius: 0px;
-  position: absolute;
+  width: 1200px;
+  margin: auto;
+  background-color: aliceblue;
 }
 
 header {
   display: inline-block;
-  height: 70px;
+  height: 65px;
   width: 1200px;
   left: 40px;
-  top: 0px;
-  border-radius: 0px;
   background: #FFFFFF;
 }
 
 .logo {
-  background-image: url(images/logo.svg);
-  right: 82.58%;
-  bottom: 0%;
+  position: relative;
   height: 70px;
   width: 139px;
   left: 70px;
-  top: 0px;
-  border-radius: 0px;
+  z-index: 1;
 }
 
-
 .main-navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 20px 17px;
-  gap: 34px;
   position: absolute;
+  padding-top: 20px;
+  padding-left: 239px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -52,22 +39,15 @@ header {
   text-decoration: none;
   height: 66px;
   width: 390px;
-  left: 239px;
-  top: 0px;
-  border-radius: 0px;
+  top: 0;
   color: #000000;
 }
 
 .user-navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
   position: absolute;
   width: 84px;
   height: 66px;
-  right: 249.87px;
-  top: 0px;
+  top: 0;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -78,16 +58,24 @@ header {
 }
 
 .search {
-  width: 42px;
-  height: 66px;
-  flex: none;
-  order: 0;
-  flex-grow: 1;
+  background-image: url(images/search.svg);
+  position: absolute;
+  width: 18.05px;
+  height: 18.1px;
+  top: 23.45px;
+  left: 878.11px;
+  bottom: 23.45px;
+  right: 343.84px;
 }
 
 .favorite {
-  width: 42px;
-  height: 66px;
+  position: absolute;
+  width: 18.05px;
+  height: 18.1px;
+  top: 23.45px;
+  left: 919.65px;
+  bottom: 23.45px;
+  right: 343.84px;
   flex: none;
   order: 1;
   flex-grow: 1;
@@ -100,8 +88,10 @@ header {
   position: absolute;
   width: 19.05px;
   height: 13px;
-  left: calc(50% - 19.05px/2 + 13px);
-  top: calc(50% - 13px/2 - 9px);
+  top: 15px;
+  left: 932.13px;
+  bottom: 3280px;
+  right: 287.87px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -113,44 +103,75 @@ header {
 }
 
 .button {
+  position: absolute;
+  height: 37px;
+  width: 160px;
+  left: 970px;
+  top: 14px;
   font-family: 'PT Sans';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 160px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  width: 160px;
   background: #756157;
   border-radius: 4px;
-  height: 20px;
-  left: 15px;
-  right: 15px;
-  top: calc(50% - 20px/2 + 0.5px);
-  display: flex;
   align-items: center;
   color: #FFFFFF;
+}
+
+main {
+  position: absolute;
+  height: 2720px;
+  width: 1200px;
+  top: 65px;
+  background: #FFFFFF;
 }
 
 .divider {
   background-image: url(images/index-background.jpg);
   height: 485px;
   width: 1200px;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
-
 }
 
+.welcome {
+  background-image: url(images/welcome.svg);
+  position: absolute;
+  right: 30.92%;
+  bottom: 47.46%;
+  height: 352px;
+  width: 458px;
+  left: 371px;
+  top: 51px;
+}
 
-
-.divider-title {
-  height: 767px;
+.divider-bottom {
+  background-image: url(images/hero-bottom.svg);
+  color: white;
+  position: absolute;
+  top: 428px;
   width: 1200px;
-  left: 40px;
-  top: 65px;
-  border-radius: 0px;
+  height: 57px;
+}
+
+.hero {
+  display: block;
+  position: absolute;
+  top: 550px;
+  height: 282px;
+  width: 1200px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+}
+
+h1 {
+  position: absolute;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -158,47 +179,103 @@ header {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
 }
 
-.divider-description {
+.hero-description {
+  height: 26px;
+  width: 654px;
+  padding-top: 166px;
+  padding-left: 273px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-
+  color: #333333;
 }
 
-main {
-  height: 1535px;
-  width: 1200px;
-  left: 40px;
+.city {
+  position: absolute;
   top: 832px;
-  border-radius: 0px;
-
+  display: block;
+  background: #82B3D3;
+  height: 384px;
+  width: 400px;
+  text-align: center;
 }
 
-.city h2 {
+.city-title {
+  width: 230px;
+  height: 56px;
+  margin-top: 92px;
+  margin-left: 85px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
+  color: #FFFFFF;
 }
 
-.city p {
+.city-number {
+  margin-top: 30px;
+  margin-left: 85px;
+  height: 21px;
+  width: 230px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
+  color: #FFFFFF;
+}
+
+.city-about {
+  margin-top: 30px;
+  margin-left: 85px;
+  height: 21px;
+  width: 230px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.city-img {
+  position: absolute;
+  height: 384px;
+  width: 800px;
+  top: 832px;
+  margin-left: 400px;
+}
+
+.house {
+  display: block;
+  position: absolute;
+  top: 1216px;
+  height: 384px;
+  width: 400px;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.house-img {
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  margin-top: 86px;
+  margin-left: 163.5px;
 }
 
 .house h2 {
+  width: 230px;
+  height: 28px;
+  margin-top: 182px;
+  margin-left: 85px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -209,6 +286,9 @@ main {
 }
 
 .house p {
+  width: 230px;
+  height: 63px;
+  margin-left: 85px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -217,7 +297,28 @@ main {
   text-align: center;
 }
 
+.food {
+  display: block;
+  position: absolute;
+  top: 1216px;
+  left: 400px;
+  height: 384px;
+  width: 400px;
+}
+
+.food-img {
+  position: absolute;
+  width: 74px;
+  height: 70px;
+  margin-top: 81px;
+  margin-left: 163.5px;
+}
+
 .food h2 {
+  width: 230px;
+  height: 28px;
+  margin-top: 182px;
+  margin-left: 85px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -228,6 +329,10 @@ main {
 }
 
 .food p {
+  width: 230px;
+  height: 63px;
+  margin-top: 30px;
+  margin-left: 85px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -236,7 +341,28 @@ main {
   text-align: center;
 }
 
+.gifts {
+  position: absolute;
+  top: 1216px;
+  left: 800px;
+  height: 384px;
+  width: 400px;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.gifts-img {
+  position: absolute;
+  width: 64px;
+  height: 76px;
+  margin-top: 78px;
+  margin-left: 168.5px;
+}
+
 .gifts h2 {
+  height: 28px;
+  width: 230px;
+  margin-top: 182px;
+  margin-left: 85px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -247,6 +373,9 @@ main {
 }
 
 .gifts p {
+  height: 63px;
+  width: 230px;
+  margin-left: 85px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -255,16 +384,72 @@ main {
   text-align: center;
 }
 
-.numbers p {
+.locations {
+  position: absolute;
+  top: 1600px;
+  width: 768px;
+  color: #000000;
+}
+
+.locations h2 {
+  width: 230px;
+  height: 56px;
+  margin-top: 103px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.locations h3 {
+  width: 230px;
+  height: 56px;
+  margin-top: 30px;
+  margin-left: 85px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.locations p {
+  width: 230px;
+  height: 63px;
+  margin-top: 30px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
 }
 
 .devil-bridge {
+  position: absolute;
+  top: 0;
+  left: 800px;
+  height: 384px;
+  width: 400px;
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.devil-bridge h2 {
+  width: 230px;
+  height: 56px;
+  margin-top: 103px;
+  margin-left: 85px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -272,48 +457,99 @@ main {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: #FFFFFF;
+}
+
+.devil-bridge h3 {
+  width: 230px;
+  height: 56px;
+  margin-top: 30px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.devil-bridge p {
+  width: 230px;
+  height: 63px;
+  margin-top: 30px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .square {
+  position: absolute;
+  height: 384px;
+  width: 400px;
+  top: 384px;
+  left: 0;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  text-transform: uppercase;
   color: #000000;
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .road {
+  position: absolute;
+  height: 384px;
+  width: 400px;
+  top: 384px;
+  left: 400px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  text-transform: uppercase;
   color: #000000;
+  background: rgba(131, 179, 211, 0.2);
 }
 
 .grand-canyon {
+  position: absolute;
+  height: 384px;
+  width: 400px;
+  top: 384px;
+  left: 800px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  text-transform: uppercase;
+  background: rgba(131, 179, 211, 0.12);
   color: #000000;
 }
 
-.wonder h2 {
+.wonder {
+  position: absolute;
+  top: 2368px;
   height: 417px;
   width: 1200px;
-  left: 40px;
-  top: 2367px;
-  border-radius: 0px;
+  display: block;
+}
+
+.wonder h2 {
+  width: 297px;
+  height: 36px;
+  margin-top: 91px;
+  margin-left: 452px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -325,11 +561,10 @@ main {
 }
 
 .wonder-description {
-  height: 52px;
   width: 592px;
-  left: 304px;
-  top: 156px;
-  border-radius: 0px;
+  height: 52px;
+  margin-top: 29px;
+  margin-left: 304px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -340,6 +575,13 @@ main {
 }
 
 .wonder-search {
+  position: absolute;
+  left: 26.08%;
+  right: 26.08%;
+  top: 63.31%;
+  bottom: 22.3%;
+  width: 574px;
+  height: 60px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -349,24 +591,24 @@ main {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  color: #FFFFFF;
+  background: #756157;
+  border-radius: 4px;
 }
 
 footer {
-  height: 120px;
+  position: absolute;
+  display: block;
+  height: 531px;
   width: 1200px;
-  left: 40px;
-  top: 3195px;
-  border-radius: 0px;
+  top: 2785px;
   text-align: center;
-
+  background-color: gainsboro;
 }
 
 .subscription {
   height: 411px;
   width: 1200px;
-  left: 40px;
-  top: 2784px;
-  border-radius: 0px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -374,6 +616,41 @@ footer {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  background-image: url(images/footer-sub.svg);
+}
+
+.sub-title {
+  position: absolute;
+  height: 36px;
+  width: 404px;
+  top: 94px;
+  left: 398px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.sub-description {
+  position: absolute;
+  right: 30.17%;
+  bottom: 48.66%;
+  height: 52px;
+  width: 475px;
+  left: 363px;
+  top: 159px;
+  border-radius: nullpx;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .footer-description {
@@ -386,26 +663,66 @@ footer {
 }
 
 .input {
-  height: 60px;
-  width: 600px;
-  left: 800px;
-  top: 257px;
-  border-radius: [object Object]px;
+  position: absolute;
+  left: 16.67%;
+  right: 33.33%;
+  top: 62.53%;
+  bottom: 22.87%;
+  background: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+}
 
+/* .input [value="Ваш e-mail"] {
+  position: absolute;
+  left: 18.5%;
+  right: 74.25%;
+  top: 67.4%;
+  bottom: 27.49%;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  background: #F2F2F2;
+  opacity: 0.6;
+} */
 
+.submit {
+  position: absolute;
+  left: 66.67%;
+  right: 16.67%;
+  top: 62.53%;
+  bottom: 22.87%;
+  background: #82B3D3;
+  border-radius: 0 10px 10px 0;
 }
 
-.sub {
+.submit [value="Подписаться"] {
+  position: absolute;
+  height: 36px;
+  left: 15px;
+  right: 15px;
+  top: calc(50% - 36px/2);
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.info {
+  display: inline-block;
+  height: 120px;
+  width: 1200px;
+  margin: auto;
 }
 
 .vk {
@@ -417,7 +734,7 @@ footer {
 }
 
 .yt {
-background-image: url(images/yt.svg);
+  background-image: url(images/yt.svg);
 }
 
 .number {
