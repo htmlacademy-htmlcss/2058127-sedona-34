@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  height: 3316px;
+  height: 3315px;
   width: 1200px;
   margin: auto;
   background-color: aliceblue;
@@ -23,6 +23,7 @@ header {
   position: relative;
   height: 70px;
   width: 139px;
+  left: 70px;
   z-index: 1;
 }
 
@@ -620,10 +621,10 @@ footer {
 
 .sub-title {
   position: absolute;
-  left: 33.17%;
-  right: 33.17%;
-  top: 22.87%;
-  bottom: 68.37%;
+  height: 36px;
+  width: 404px;
+  top: 94px;
+  left: 398px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700px;
@@ -636,10 +637,13 @@ footer {
 
 .sub-description {
   position: absolute;
-  left: 30.25%;
   right: 30.17%;
-  top: 38.69%;
   bottom: 48.66%;
+  height: 52px;
+  width: 475px;
+  left: 363px;
+  top: 159px;
+  border-radius: nullpx;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
