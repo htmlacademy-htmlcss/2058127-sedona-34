@@ -4,13 +4,12 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style-catalog.css">
-    <link rel="stylesheet" href="style.css">
     <title>HTML Academy: Седона</title>
   </head>
 
   <body>
     <div class="container">
-      <header class="page-header">
+      <header>
         <div class="logo">
           <img src="images/logo.svg" width="139" height="70" alt="Логотип">
         </div>
@@ -30,7 +29,7 @@
         <div class="hero">
           <h1 class="hero-title">Гостиницы Седоны</h1>
           <ul class="nav-button">
-            <li><a href="index.html"></a>Главная</li>
+            <li><a href="index.html" class="hero-link"></a>Главная</li>
             <li>Гостиницы</li>
           </ul>
           <section class="infrastructure">
@@ -47,9 +46,9 @@
           </section>
           <div class="wrapper">
             <p class="price">Стоимость, ₽:</p>
-            <p>
-              <span>0</span>
-              <span>9000</span>
+            <p class="range-of-price">
+              <span class="from">0</span>
+              <span class="before">9000</span>
             </p>
             <div class="range">
               <div class="range__bar">
@@ -59,20 +58,26 @@
               <button type="button" class="range__button range__button--right" aria-label="Стоимость до"></button>
             </div>
           </div>
+          <form>
+            <input class="apply" type="form" value="Применить">
+            <p class="reset">Сбросить</p>
+          </form>
         </div>
-        <section class="main-hotels">
-          <h2>Найдено гостиниц: 38</h2>
-          <select class="type-of-hotel">
-            <option checked value="Сначала дешёвые">Сначала дешёвые</option>
-            <option value="Сначала дорогие">Сначала дорогие</option>
-          </select>
-          <div class="list">
-            <a href="#"><img src="images/icon-table.svg" class="icon-table" alt="Упорядоченный список"></a>
-            <a href="#"><img src="images/icon-slideshow.svg" class="icon-slideshow" alt="Слад-шоу"></a>
-            <a href="#"><img src="images/icon-list.svg" class="icon-list" alt="Список столбиком"></a>
-          </div>
-          <div>
-            <section class="hotel">
+        <div class="top-main-hotels">
+          <section class="main-title">
+            <h2>Найдено гостиниц: 38</h2>
+            <select class="type-of-hotel">
+              <option checked value="Сначала дешёвые">Сначала дешёвые</option>
+              <option value="Сначала дорогие">Сначала дорогие</option>
+            </select>
+            <div class="list">
+              <a href="#"><img src="images/icon-table.svg" class="icon-table" alt="Упорядоченный список"></a>
+              <a href="#"><img src="images/icon-slideshow.svg" class="icon-slideshow" alt="Слад-шоу"></a>
+              <a href="#"><img src="images/icon-list.svg" class="icon-list" alt="Список столбиком"></a>
+            </div>
+          </section>
+          <div class="main-hotels">
+            <section class="amara-hotel">
               <img src="images/Amara-resort.jpg" class="Amara-resort" alt="Гостиница " Amara Resort &Spa"">
               <h3><a href="#">Amara Resort & Spa</a></h3>
               <p>Гостиница</p>
@@ -87,7 +92,7 @@
               </div>
               <p class="rating">Рейтинг:8,5</p>
             </section>
-            <section class="hotel">
+            <section class="villas-hotel">
               <img src="images/Villas-at-poco.jpg" class="Villas-at-poco" alt="Гостиница " Villas at Poco Diablo"">
               <h3><a href="#">Villas at Poco Diablo</a></h3>
               <p>Гостиница</p>
@@ -102,7 +107,7 @@
               </div>
               <p class="rating">Рейтинг:9,2</p>
             </section>
-            <section class="hotel">
+            <section class="desert-hotel">
               <img src="images/Desert-quali.jpg" class="Desert-quali" alt="Гостиница " Desert Quali inn"">
               <h3><a href="#">Desert Quail Inn</a></h3>
               <p>Гостиница</p>
@@ -116,7 +121,8 @@
               </div>
               <p class="rating">Рейтинг:6,9</p>
             </section>
-            <section class="hotel">
+
+            <section class="green-tree-hotel">
               <img src="images/GreenTree.jpg" class="GreenTree-inn" alt="Гостиница " GreenTree Inn"">
               <h3><a href="#">GreenTree Inn</a></h3>
               <p>Гостиница</p>
@@ -130,44 +136,45 @@
               <p class="rating">Рейтинг:5,0</p>
             </section>
           </div>
-          <div class="pages">
-            <ul>
-              <li class="selected-page" href="#">1</li>
-              <li href="#">2</li>
-              <li href="#">3</li>
-              <li href="#">4</li>
-              <li href="#">...</li>
-              <li href="#">10</li>
-            </ul>
-          </div>
-          <div class="page-number-of-hotel">
-            <select>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4" selected>4</option>
-            </select>
-          </div>
-      </main>
-      <footer>
-        <!-- <img src="images/footer-bg-img.png" class="footer-bg-img" alt="Красоты Седоны"> -->
-        <h2 class="subscription">Подпишитесь на рассылку</h2>
-        <p class="footer-description">Только полезная информцаия и никакого спама, честное бойскаутское!</p>
-        <section>
-          <form>
-            <input class="input" type="email" value="Ваш e-mail"><input type="submit" value="Подписаться">
-          </form>
-        </section>
-        <section>
-          <a href="https://vk.com/htmlacademy"><img src="images/vk.svg" class="vk" alt="Ссылка на группу ВКонтакте"></a>
-          <a href="https://t.me/htmlacademy"><img src="images/tg.svg" class="tg" alt="Ссылка не Телеграмм канал"></a>
-          <a href="https://www.youtube.com/user/htmlacademyru"><img src="images/yt.svg" class="yt"
-              alt="Ссылка на YouTube канал"></a>
-          <a href="tel:+78128121212" class="number">+7 (812) 812-12-12</a>
-          <a href="https://htmlacademy.ru"><img src="images/html-academy.svg" class="logo-academy"
-              alt="Академия HTML"></a>
-        </section>
-      </footer>
+        </div>
+        <div class="pages">
+          <ul>
+            <li class="selected-page" href="#">1</li>
+            <li href="#">2</li>
+            <li href="#">3</li>
+            <li href="#">4</li>
+            <li href="#">...</li>
+            <li href="#">10</li>
+          </ul>
+        </div>
+        <div class="page-number-of-hotel">
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+          </select>
+        </div>
+    </div>
+    </main>
+    <footer>
+      <!-- <img src="images/footer-bg-img.png" class="footer-bg-img" alt="Красоты Седоны"> -->
+      <h2 class="subscription">Подпишитесь на рассылку</h2>
+      <p class="footer-description">Только полезная информцаия и никакого спама, честное бойскаутское!</p>
+      <section>
+        <form>
+          <input class="input" type="email" value="Ваш e-mail"><input type="submit" value="Подписаться">
+        </form>
+      </section>
+      <section>
+        <a href="https://vk.com/htmlacademy"><img src="images/vk.svg" class="vk" alt="Ссылка на группу ВКонтакте"></a>
+        <a href="https://t.me/htmlacademy"><img src="images/tg.svg" class="tg" alt="Ссылка не Телеграмм канал"></a>
+        <a href="https://www.youtube.com/user/htmlacademyru"><img src="images/yt.svg" class="yt"
+            alt="Ссылка на YouTube канал"></a>
+        <a href="tel:+78128121212" class="number">+7 (812) 812-12-12</a>
+        <a href="https://htmlacademy.ru" class="logo-academy" alt="Академия HTML"></a>
+      </section>
+    </footer>
     </div>
   </body>
 
