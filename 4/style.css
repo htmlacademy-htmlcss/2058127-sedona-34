@@ -1,0 +1,854 @@
+body {
+  font-family: 'PT Sans';
+  background: #E5E5E5;
+  margin: auto;
+}
+
+.container {
+  height: 3315px;
+  width: 1280px;
+  margin: auto;
+  background: #F2F2F2;
+}
+
+header {
+  position: relative;
+  display: inline-block;
+  height: 65px;
+  width: 1200px;
+  margin-left: 40px;
+  background: #FFFFFF;
+}
+
+.logo {
+  position: relative;
+  height: 70px;
+  width: 139px;
+  left: 70px;
+  z-index: 1;
+}
+
+.main-navigation {
+  position: absolute;
+  padding-top: 20px;
+  padding-left: 239px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  height: 66px;
+  width: 390px;
+  top: 0;
+  color: #000000;
+}
+
+.underline {
+  position: absolute;
+  width: 68px;
+  height: 0;
+  top: 65px;
+  margin-left: 47px;
+  border: 2px solid #756257;
+}
+
+.user-navigation {
+  position: absolute;
+  width: 84px;
+  height: 66px;
+  top: 0;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.search {
+  background-image: url(images/search.svg);
+  position: absolute;
+  width: 18.05px;
+  height: 18.1px;
+  top: 23.45px;
+  left: 878.11px;
+  bottom: 23.45px;
+  right: 343.84px;
+}
+
+.favorite {
+  position: absolute;
+  width: 18.05px;
+  height: 18.1px;
+  top: 23.45px;
+  left: 919.65px;
+  bottom: 23.45px;
+  right: 343.84px;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+
+.total-favorite {
+  text-decoration: none;
+  background: #7DB54F;
+  border-radius: 10px;
+  position: absolute;
+  width: 19.05px;
+  height: 13px;
+  top: 15px;
+  left: 932.13px;
+  bottom: 3280px;
+  right: 287.87px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: -0.1em;
+  color: #FFFFFF;
+}
+
+.button {
+  position: absolute;
+  height: 37px;
+  width: 160px;
+  left: 970px;
+  top: 14px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 160px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background: #756157;
+  border-radius: 4px;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.button:hover {
+  position: absolute;
+  height: 37px;
+  width: 160px;
+  left: 970px;
+  top: 14px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 160px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background: #615048;
+  border-radius: 4px;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+main {
+  position: absolute;
+  height: 2720px;
+  width: 1200px;
+  top: 65px;
+  margin-left: 40px;
+  background: #FFFFFF;
+}
+
+.divider {
+  display: block;
+  background-image: url(images/index-background.jpg);
+  height: 485px;
+  width: 1200px;
+}
+
+.welcome {
+  background-image: url(images/welcome.svg);
+  position: absolute;
+  right: 30.92%;
+  bottom: 47.46%;
+  height: 352px;
+  width: 458px;
+  left: 371px;
+  top: 51px;
+}
+
+.divider-bottom {
+  background-image: url(images/hero-bottom.svg);
+  color: white;
+  position: absolute;
+  top: 428px;
+  left: 0;
+  width: 1200px;
+  height: 57px;
+}
+
+.hero {
+  display: block;
+  position: absolute;
+  top: 550px;
+  height: 282px;
+  width: 1200px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+}
+
+h1 {
+  position: absolute;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hero-description {
+  height: 26px;
+  width: 654px;
+  padding-top: 166px;
+  padding-left: 273px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.city {
+  position: absolute;
+  top: 832px;
+  display: block;
+  background: #82B3D3;
+  height: 384px;
+  width: 400px;
+  text-align: center;
+}
+
+.city-title {
+  width: 230px;
+  height: 56px;
+  margin-top: 92px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.city-number {
+  margin-top: 30px;
+  margin-left: 85px;
+  height: 21px;
+  width: 230px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.city-about {
+  margin-top: 30px;
+  margin-left: 85px;
+  height: 21px;
+  width: 230px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.city-img {
+  position: absolute;
+  height: 384px;
+  width: 800px;
+  top: 832px;
+  margin-left: 400px;
+}
+
+.house {
+  display: block;
+  position: absolute;
+  top: 1216px;
+  height: 384px;
+  width: 400px;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.house-img {
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  margin-top: 86px;
+  margin-left: 163.5px;
+}
+
+.house h2 {
+  width: 230px;
+  height: 28px;
+  margin-top: 182px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.house p {
+  width: 230px;
+  height: 63px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.food {
+  display: block;
+  position: absolute;
+  top: 1216px;
+  left: 400px;
+  height: 384px;
+  width: 400px;
+}
+
+.food-img {
+  position: absolute;
+  width: 74px;
+  height: 70px;
+  margin-top: 81px;
+  margin-left: 163.5px;
+}
+
+.food h2 {
+  width: 230px;
+  height: 28px;
+  margin-top: 182px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.food p {
+  width: 230px;
+  height: 63px;
+  margin-top: 30px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.gifts {
+  position: absolute;
+  top: 1216px;
+  left: 800px;
+  height: 384px;
+  width: 400px;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.gifts-img {
+  position: absolute;
+  width: 64px;
+  height: 76px;
+  margin-top: 78px;
+  margin-left: 168.5px;
+}
+
+.gifts h2 {
+  height: 28px;
+  width: 230px;
+  margin-top: 182px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gifts p {
+  height: 63px;
+  width: 230px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.locations {
+  position: absolute;
+  top: 1600px;
+  width: 768px;
+  color: #000000;
+}
+
+.locations h2 {
+  width: 230px;
+  height: 56px;
+  margin-top: 103px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.locations h3 {
+  width: 230px;
+  height: 56px;
+  margin-top: 30px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.locations p {
+  width: 230px;
+  height: 63px;
+  margin-top: 30px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.devil-bridge {
+  position: absolute;
+  top: 0;
+  left: 800px;
+  height: 384px;
+  width: 400px;
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.devil-bridge h2 {
+  width: 230px;
+  height: 56px;
+  margin-top: 103px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.devil-bridge h3 {
+  width: 230px;
+  height: 56px;
+  margin-top: 30px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.devil-bridge p {
+  width: 230px;
+  height: 63px;
+  margin-top: 30px;
+  margin-left: 85px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.square {
+  position: absolute;
+  height: 384px;
+  width: 400px;
+  top: 384px;
+  left: 0;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.road {
+  position: absolute;
+  height: 384px;
+  width: 400px;
+  top: 384px;
+  left: 400px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.grand-canyon {
+  position: absolute;
+  height: 384px;
+  width: 400px;
+  top: 384px;
+  left: 800px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  background: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
+.wonder {
+  position: absolute;
+  top: 2368px;
+  height: 411px;
+  width: 1200px;
+  display: block;
+}
+
+.wonder h2 {
+  width: 297px;
+  height: 36px;
+  margin-top: 91px;
+  margin-left: 452px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.wonder-description {
+  width: 592px;
+  height: 52px;
+  margin-top: 29px;
+  margin-left: 304px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.wonder-search {
+  position: absolute;
+  left: 26.08%;
+  right: 26.08%;
+  top: 63.31%;
+  bottom: 22.3%;
+  width: 574px;
+  height: 60px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #756157;
+  border-radius: 4px;
+}
+
+.wonder-search:hover {
+  position: absolute;
+  left: 26.08%;
+  right: 26.08%;
+  top: 63.31%;
+  bottom: 22.3%;
+  width: 574px;
+  height: 60px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #615048;
+  border-radius: 4px;
+}
+
+footer {
+  position: absolute;
+  display: block;
+  height: 531px;
+  width: 1200px;
+  top: 2785px;
+  margin-left: 40px;
+  background-color: gainsboro;
+}
+
+.subscription {
+  height: 411px;
+  width: 1200px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: url(images/footer-sub.svg);
+}
+
+.sub-title {
+  position: absolute;
+  height: 36px;
+  width: 404px;
+  top: 94px;
+  left: 398px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.sub-description {
+  position: absolute;
+  right: 30.17%;
+  bottom: 48.66%;
+  height: 52px;
+  width: 475px;
+  left: 363px;
+  top: 159px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.footer-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.input {
+  position: absolute;
+  left: 200px;
+  top: 257px;
+  width: 600px;
+  height: 60px;
+  background: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+}
+
+/* .input [value="Ваш e-mail"] {
+  position: absolute;
+  left: 18.5%;
+  right: 74.25%;
+  top: 67.4%;
+  bottom: 27.49%;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  background: #F2F2F2;
+  opacity: 0.6;
+} */
+
+.submit {
+  position: absolute;
+  left: 66.67%;
+  top: 257px;
+  width: 200px;
+  height: 60px;
+  background: #82B3D3;
+  border-radius: 0 10px 10px 0;
+}
+
+.submit [value="Подписаться"] {
+  position: absolute;
+  height: 60px;
+  left: 15px;
+  top: 257px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.submit:hover {
+  background: #68A2CA;
+}
+
+.submit:focus {
+  background: #68A2CA;
+}
+
+.info {
+  position: relative;
+  display: inline-block;
+  height: 120px;
+  width: 1200px;
+  left: 0;
+}
+
+.vk {
+  position: relative;
+  top: 58px;
+  left: 81.67px;
+  height: 14px;
+  width: 24.000503540039062px;
+}
+
+.vk:hover {
+  background-image: url(images/vk-hover.svg);
+}
+
+.tg:hover {
+  background-image: url(images/tg.svg);
+}
+
+.yt {
+  background-image: url(images/yt.svg);
+  position: relative;
+  top: 56.5px;
+  left: 177.33px;
+}
+
+.yt:hover {
+  background-image: url(images/yt-hover.svg);
+}
+
+.number {
+  position: relative;
+  top: 45px;
+  left: 408.5px;
+  width: 331px;
+  height: 40px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.number:hover {
+  color: #756157;
+}
+
+.logo-academy {
+  background-image: url(images/html-academy.svg);
+  position: absolute;
+  top: 50px;
+  left: 1015px;
+  width: 114.9px;
+  height: 32.9px;
+}
+
+.logo-academy:hover {
+  background-image: url(images/academy-hover.svg);
+  position: absolute;
+  top: 49px;
+  left: 1015px;
+  width: 114.9px;
+  height: 33.9px;
+}
