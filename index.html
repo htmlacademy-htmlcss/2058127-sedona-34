@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-     <link rel="shortcut icon" href="/images/logo.svg" type="image/png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -15,21 +15,19 @@
           <img src="images/logo.svg" width="139" height="70" alt="Логотип">
         </div>
         <nav class="main-navigation">
-          <a href="index.html">Главная</a>
-          <a href="#">О Седоне</a>
-          <a href="catalog.html">Гостиницы</a>
+          <a href="index.html" class="nav-hover">Главная</a>
+          <a href="#" class="nav-hover">О Седоне</a>
+          <a href="catalog.html" class="nav-hover">Гостиницы</a>
         </nav>
-        <div class="underline"></div>
         <nav class="user-navigation">
-          <div class="search"><a href="#" alt="Поиск"></a></div>
-          <a><img src="images/favorite.svg" class="favorite"><a class="total-favorite" href="#"
-              alt="Избранное"><sup>12</sup></a>
-            <a class="button" href="#">Хочу сюда!</a>
+          <a class="search" href="#" alt="Поиск"></a>
+          <a class="favotire" href="#"><span>12</span></a>
+          <a class="button" href="#" alt="Забронировать">Хочу сюда!</a>
         </nav>
       </header>
       <main>
         <div class="divider">
-          <span class="welcome"></span>
+          <img src="images/welcome-title.svg" class="welcome">
           <span class="divider-bottom"></span>
         </div>
         <div class="hero">
@@ -92,8 +90,6 @@
         </section>
       </main>
       <footer>
-
-        <!--<img src="images/footer-bg-img.png" class="footer-bg-img" alt="Красоты Седоны"> -->
         <div class="subscription">
           <h2 class="sub-title">Подпишитесь на рассылку</h2>
           <p class="sub-description">Только полезная информцаия и никакого спама, честное бойскаутское!</p>
@@ -105,9 +101,9 @@
           </section>
         </div>
         <section class="info">
-          <a href="https://vk.com/htmlacademy"><img src="images/vk.svg" class="vk" alt="Ссылка на группу ВКонтакте"
+          <a href="https://vk.com/htmlacademy" class="vk" alt="Ссылка на группу ВКонтакте"
               height="14" width="24"></a>
-          <a href="https://t.me/htmlacademy"><img src="images/tg.svg" class="tg" alt="Ссылка не Телеграмм канал"></a>
+          <a href="https://t.me/htmlacademy" class="tg" alt="Ссылка не Телеграмм канал"></a>
           <a href="https://www.youtube.com/user/htmlacademyru" class="yt" alt="Ссылка на YouTube канал"></a>
           <a href="tel:+78128121212" class="number">+7 (812) 812-12-12</a>
           <a href="https://htmlacademy.ru" class="logo-academy" alt="Академия HTML"></a>

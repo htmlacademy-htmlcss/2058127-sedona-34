@@ -1,7 +1,27 @@
+html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(fonts/ptsans-400.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(fonts/ptsans-700.woff2) format(woff2);
+}
+
 body {
-  font-family: 'PT Sans';
   background: #E5E5E5;
-  margin: auto;
+  margin: 0;
+  display: flex;
 }
 
 .container {
@@ -32,25 +52,31 @@ header {
   position: absolute;
   padding-top: 20px;
   padding-left: 239px;
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-decoration: none;
-  height: 66px;
+  height: 65px;
   width: 390px;
   top: 0;
   color: #000000;
 }
 
-.underline {
-  position: absolute;
-  width: 68px;
-  height: 0;
-  top: 65px;
-  margin-left: 47px;
-  border: 2px solid #756257;
+.main-navigation a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-hover {
+  padding: 13px;
+}
+
+.nav-hover:hover {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #756257;
+  padding-bottom: 18px;
 }
 
 .user-navigation {
@@ -58,8 +84,6 @@ header {
   width: 84px;
   height: 66px;
   top: 0;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -74,36 +98,30 @@ header {
   height: 18.1px;
   top: 23.45px;
   left: 878.11px;
-  bottom: 23.45px;
-  right: 343.84px;
 }
 
 .favorite {
   position: absolute;
-  width: 18.05px;
+  width: 19.05px;
   height: 18.1px;
-  top: 23.45px;
-  left: 919.65px;
-  bottom: 23.45px;
-  right: 343.84px;
+  top: 24.45px;
+  left: 915.65px;
   flex: none;
   order: 1;
   flex-grow: 1;
+  background-image: url(images/favorite.svg);
+  background-repeat: no-repeat;
 }
 
-.total-favorite {
+.span {
   text-decoration: none;
   background: #7DB54F;
   border-radius: 10px;
   position: absolute;
-  width: 19.05px;
-  height: 13px;
+  width: 20px;
+  height: 20px;
   top: 15px;
   left: 932.13px;
-  bottom: 3280px;
-  right: 287.87px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
@@ -112,20 +130,21 @@ header {
   color: #FFFFFF;
 }
 
+
 .button {
   position: absolute;
+  display: block;
   height: 37px;
   width: 160px;
   left: 970px;
   top: 14px;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 160px;
+  font-weight: 160;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  font-family: inherit;
   background: #756157;
   border-radius: 4px;
   align-items: center;
@@ -133,32 +152,26 @@ header {
 }
 
 .button:hover {
-  position: absolute;
-  height: 37px;
-  width: 160px;
-  left: 970px;
-  top: 14px;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 160px;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
   background: #615048;
-  border-radius: 4px;
-  align-items: center;
-  color: #FFFFFF;
+}
+
+.button:focus {
+  background: #615048;
+}
+
+.button:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 main {
-  position: absolute;
+  position: relative;
   height: 2720px;
   width: 1200px;
-  top: 65px;
+  top: -10px;
   margin-left: 40px;
   background: #FFFFFF;
+  flex-grow: 1;
 }
 
 .divider {
@@ -169,7 +182,6 @@ main {
 }
 
 .welcome {
-  background-image: url(images/welcome.svg);
   position: absolute;
   right: 30.92%;
   bottom: 47.46%;
@@ -186,17 +198,15 @@ main {
   top: 428px;
   left: 0;
   width: 1200px;
-  height: 57px;
+  height: 58px;
 }
 
 .hero {
   display: block;
   position: absolute;
-  top: 550px;
+  top: 500px;
   height: 282px;
   width: 1200px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -204,9 +214,11 @@ main {
 }
 
 h1 {
-  position: absolute;
-  font-family: 'PT Sans';
-  font-style: normal;
+  position: relative;
+  top: 28px;
+  left: 260px;
+  height: 72px;
+  width: 620px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -216,17 +228,23 @@ h1 {
 }
 
 .hero-description {
+  position: relative;
+  top: 5px;
+  left: 0;
   height: 26px;
   width: 654px;
-  padding-top: 166px;
-  padding-left: 273px;
-  font-family: 'PT Sans';
-  font-style: normal;
+  padding-top: 31px;
+  padding-left: 272px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
+}
+
+.benefits {
+  position: absolute;
+  top: -65px;
 }
 
 .city {
@@ -244,8 +262,6 @@ h1 {
   height: 56px;
   margin-top: 92px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -258,8 +274,6 @@ h1 {
   margin-left: 85px;
   height: 21px;
   width: 230px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -271,8 +285,6 @@ h1 {
   margin-left: 85px;
   height: 21px;
   width: 230px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -309,8 +321,6 @@ h1 {
   height: 28px;
   margin-top: 182px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -322,8 +332,6 @@ h1 {
   width: 230px;
   height: 63px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -352,8 +360,6 @@ h1 {
   height: 28px;
   margin-top: 182px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -366,8 +372,6 @@ h1 {
   height: 63px;
   margin-top: 30px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -396,8 +400,6 @@ h1 {
   width: 230px;
   margin-top: 182px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -409,8 +411,6 @@ h1 {
   height: 63px;
   width: 230px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -419,7 +419,7 @@ h1 {
 
 .locations {
   position: absolute;
-  top: 1600px;
+  top: 1532px;
   width: 768px;
   color: #000000;
 }
@@ -429,8 +429,6 @@ h1 {
   height: 56px;
   margin-top: 103px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -444,8 +442,6 @@ h1 {
   height: 56px;
   margin-top: 30px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -459,8 +455,6 @@ h1 {
   height: 63px;
   margin-top: 30px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -483,8 +477,6 @@ h1 {
   height: 56px;
   margin-top: 103px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -498,8 +490,6 @@ h1 {
   height: 56px;
   margin-top: 30px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -513,8 +503,6 @@ h1 {
   height: 63px;
   margin-top: 30px;
   margin-left: 85px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -528,8 +516,6 @@ h1 {
   width: 400px;
   top: 384px;
   left: 0;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -544,8 +530,6 @@ h1 {
   width: 400px;
   top: 384px;
   left: 400px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -560,8 +544,6 @@ h1 {
   width: 400px;
   top: 384px;
   left: 800px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -572,7 +554,7 @@ h1 {
 
 .wonder {
   position: absolute;
-  top: 2368px;
+  top: 2303px;
   height: 411px;
   width: 1200px;
   display: block;
@@ -583,8 +565,6 @@ h1 {
   height: 36px;
   margin-top: 91px;
   margin-left: 452px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -598,8 +578,6 @@ h1 {
   height: 52px;
   margin-top: 29px;
   margin-left: 304px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -615,8 +593,6 @@ h1 {
   bottom: 22.3%;
   width: 574px;
   height: 60px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -630,42 +606,31 @@ h1 {
 }
 
 .wonder-search:hover {
-  position: absolute;
-  left: 26.08%;
-  right: 26.08%;
-  top: 63.31%;
-  bottom: 22.3%;
-  width: 574px;
-  height: 60px;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #FFFFFF;
   background: #615048;
-  border-radius: 4px;
+}
+
+.wonder-search:focus {
+  background: #615048;
+}
+
+.wonder-search:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 footer {
   position: absolute;
-  display: block;
-  height: 531px;
+  display: inline-block;
+  height: 557px;
   width: 1200px;
-  top: 2785px;
+  top: 2758px;
   margin-left: 40px;
-  background-color: gainsboro;
+  background-color: #FFFFFF;
 }
 
 .subscription {
   height: 411px;
   width: 1200px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -675,14 +640,12 @@ footer {
 }
 
 .sub-title {
-  position: absolute;
+  position: relative;
   height: 36px;
   width: 404px;
   top: 94px;
   left: 398px;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -698,8 +661,6 @@ footer {
   width: 475px;
   left: 363px;
   top: 159px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -708,8 +669,6 @@ footer {
 }
 
 .footer-description {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -719,11 +678,18 @@ footer {
 .input {
   position: absolute;
   left: 200px;
-  top: 257px;
+  top: 279px;
   width: 600px;
   height: 60px;
   background: #F2F2F2;
   border-radius: 10px 0 0 10px;
+}
+
+.input:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 /* .input [value="Ваш e-mail"] {
@@ -732,8 +698,6 @@ footer {
   right: 74.25%;
   top: 67.4%;
   bottom: 27.49%;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -747,20 +711,19 @@ footer {
 .submit {
   position: absolute;
   left: 66.67%;
-  top: 257px;
+  top: 279px;
   width: 200px;
-  height: 60px;
+  height: 66px;
   background: #82B3D3;
   border-radius: 0 10px 10px 0;
 }
 
 .submit [value="Подписаться"] {
   position: absolute;
-  height: 60px;
+  height: 66px;
+  width: 200px;
   left: 15px;
   top: 257px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -781,37 +744,75 @@ footer {
 
 .info {
   position: relative;
-  display: inline-block;
   height: 120px;
   width: 1200px;
   left: 0;
 }
 
 .vk {
-  position: relative;
+  position: absolute;
+  background-image: url(images/vk.svg);
+  height: 15.1px;
+  width: 24px;
   top: 58px;
   left: 81.67px;
-  height: 14px;
-  width: 24.000503540039062px;
+  background-repeat: no-repeat;
 }
 
 .vk:hover {
   background-image: url(images/vk-hover.svg);
 }
 
-.tg:hover {
+.vk:focus {
+  background-image: url(images/vk-focus.svg);
+}
+
+.vk:active {
+  background-image: url(images/vk-active.svg);
+}
+
+.tg {
+  position: absolute;
+  top: 57px;
+  left: 132px;
   background-image: url(images/tg.svg);
+  height: 15.1px;
+  width: 24px;
+  background-repeat: no-repeat;
+}
+
+.tg:hover {
+  background-image: url(images/tg-hover.svg);
+}
+
+.tg:focus {
+  background-image: url(images/tg-focus.svg);
+}
+
+.tg:active {
+  background-image: url(images/tg-active.svg);
 }
 
 .yt {
+  position: absolute;
   background-image: url(images/yt.svg);
-  position: relative;
-  top: 56.5px;
+  top: 57px;
   left: 177.33px;
+  height: 18.1px;
+  width: 24px;
+  background-repeat: no-repeat;
 }
 
 .yt:hover {
   background-image: url(images/yt-hover.svg);
+}
+
+.yt:focus {
+  background-image: url(images/yt-focus.svg);
+}
+
+.yt:active {
+  background-image: url(images/yt-active.svg);
 }
 
 .number {
@@ -820,8 +821,6 @@ footer {
   left: 408.5px;
   width: 331px;
   height: 40px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -833,6 +832,14 @@ footer {
 
 .number:hover {
   color: #756157;
+}
+
+.number:focus {
+  color: #756157;
+}
+
+.number:active {
+  background: rgba(117, 97, 87, 0.3);
 }
 
 .logo-academy {
