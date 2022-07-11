@@ -45,7 +45,6 @@ header {
   height: 70px;
   width: 139px;
   left: 70px;
-  z-index: 1;
 }
 
 .main-navigation {
@@ -160,4 +159,27 @@ header {
 .button:active {
   background: #756157;
   color: rgba(255, 255, 255, 0.3);
+}
+
+main {
+  position: relative;
+  padding-top: 0;
+  margin-left: 40px;
+  top: 0;
+  padding: 0;
+  width: 1200px;
+  height: 1615px;
+  background-color: antiquewhite;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  height: 403px;
+  background-color: aqua;
 }
