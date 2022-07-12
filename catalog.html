@@ -160,15 +160,16 @@
         <div class="catalog-pages">
           <div class="pages">
             <ul>
-              <li class="selected-page" href="#">1</li>
-              <li href="#">2</li>
-              <li href="#">3</li>
-              <li href="#">4</li>
-              <li href="#">...</li>
-              <li href="#">10</li>
+              <li class="selected-page">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>...</li>
+              <li>10</li>
             </ul>
           </div>
           <div class="page-number-of-hotel">
+            <p class="pages-text"></p>
             <select>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -178,16 +179,17 @@
           </div>
         </div>
       </main>
-      <footer>
+      <footer class="footer">
         <div class="subscription">
-          <h2 class="sub-title">Подпишитесь на рассылку</h2>
-          <p class="sub-description">
+          <h2 class="main-subtitle sub-title">Подпишитесь на рассылку</h2>
+          <p class="sub-description text">
             Только полезная информцаия и никакого спама, честное бойскаутское!
           </p>
           <section class="form">
             <form>
-              <input class="input" type="email" value="Ваш e-mail">
-              <input class="submit" type="submit" value="Подписаться">
+              <label for="subscription-email" class="visually-hidden">Ваш e-mail</label>
+              <input id="subscription-email" class="input" type="email" placeholder="Ваш e-mail" />
+              <button class="submit" type="submit">Подписаться</button>
             </form>
           </section>
         </div>
