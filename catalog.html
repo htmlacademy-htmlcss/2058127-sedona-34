@@ -29,32 +29,79 @@
         <div class="settings">
           <h1 class="catalog-h1">Гостиницы Седоны</h1>
           <ul class="hero-catalog">
-            <a><img src="images/hero-link.svg" href="index.html" class="hero-link" alt="На главную"></a>
+            <a href="index.html" class="hero-link" alt="На главную"></a>
             <img src="images/hero-link-point.svg" class="hero-point">
             <li class="hero-nav">Гостиницы</li>
           </ul>
           <section class="infra">
             <h2 class="title-settings">Инфраструктура:</h2>
-            <p><input class="infra-check-box" type="checkbox" name="waterpool" value="Бассейн" checked>Бассейн</p>
-            <p><input class="infra-check-box" type="checkbox" name="parking" value="Парковка" checked>Парковка</p>
-            <p><input class="infra-check-box" type="checkbox" name="wi-fi" value="Wi-Fi">Wi-Fi</p>
+            <div class="checkbox-list">
+              <ul class="wireless-filter__list reset-list">
+                <li class="wireless-filter__item">
+                  <input class="wireless__input visually-hidden" id="radio-1" type="radio" name="product-group"
+                    value="Бассейн" checked>
+                  <label class="wireless__label" for="radio-1">Бассейн</label>
+                </li>
+                <li class="wireless-filter__item">
+                  <input class="wireless__input visually-hidden" id="radio-2" type="radio" name="product-group"
+                    value="Парковка" checked>
+                  <label class="wireless__label" for="radio-2">Парковка</label>
+                </li>
+                <li class="wireless-filter__item">
+                  <input class="wireless__input visually-hidden" id="radio-3" type="radio" name="product-group"
+                    value="Wi-Fi">
+                  <label class="wireless__label" for="radio-3">Wi-Fi</label>
+                </li>
+              </ul>
+            </div>
           </section>
           <section class="type">
             <h2 class="title-settings">Тип Жилья:</h2>
-            <p><input type="checkbox" name="Гостиница" value="Гостиница" checked>Гостиница</p>
-            <p><input type="checkbox" name="Мотель" value="Мотель">Мотель</p>
-            <p><input type="checkbox" name="Апартаменты" value="Апартаменты">Апартаменты</p>
+            <div class="checkbox-list">
+              <ul class="wireless-filter__list reset-list">
+                <li class="wireless-filter__item">
+                  <input class="wireless__input visually-hidden wireless_circle" id="radio-4" type="radio" name="product-group"
+                    value="Гостиница" checked>
+                  <label class="wireless__label" for="radio-4">Гостиница</label>
+                </li>
+                <li class="wireless-filter__item">
+                  <input class="wireless__input visually-hidden wireless_circle" id="radio-5" type="radio" name="product-group"
+                    value="Мотель">
+                  <label class="wireless__label" for="radio-5">Мотель</label>
+                </li>
+                <li class="wireless-filter__item">
+                  <input class="wireless__input visually-hidden wireless_circle" id="radio-6" type="radio" name="product-group"
+                    value="Апартаменты">
+                  <label class="wireless__label" for="radio-6">Апартаменты</label>
+                </li>
+              </ul>
+            </div>
           </section>
-          <div class="wrapper">
-            <div class="range">
-              <div class="range__bar">
-                <span class="range__bar-inner"></span>
+          <div class="settings-wrapper">
+            <p class="settings-price">Стоимость, ₽:</p>
+            <div class="wrapper">
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <input class="range-input input-min-price" type="number" value="0" name="min-price">
+                  <span class="input-price-from">от</span>
+                </label>
+                <label class="catalog-filter-label">
+                  <input class="range-input input-max-price" type="number" value="9000" name="max-price">
+                  <span class="input-price-before">до</span>
+                </label>
               </div>
-              <button type="button" class="range__button range__button--left" aria-label="Стоимость от"></button>
-              <button type="button" class="range__button range__button--right" aria-label="Стоимость до"></button>
+              <div class="wrapper-line">
+                <div class="range">
+                  <div class="range__bar">
+                    <span class="range__bar-inner"></span>
+                  </div>
+                  <button type="button" class="range__button range__button--left" aria-label="Стоимость от"></button>
+                  <button type="button" class="range__button range__button--right" aria-label="Стоимость до"></button>
+                </div>
+              </div>
             </div>
           </div>
-          <form class="form">
+          <form class="settings-form">
             <input class="apply" type="form" value="Применить">
             <p class="reset">Сбросить</p>
           </form>
@@ -83,8 +130,8 @@
               <p class="text-price">От 4000 ₽</p>
             </section>
             <section class="card-buttons">
-              <a href="#" class="button-about">Подробнее</a>
-              <a href="#" class="button-favorite">В избранное</a>
+              <a href="#" class="button-about brownSB">Подробнее</a>
+              <a href="#" class="button-favorite blueSB">В избранное</a>
             </section>
             <div class="catalog-raiting">
               <section class="stars">
@@ -104,7 +151,7 @@
               <p class="text-price">От 5000 ₽</p>
             </section>
             <section class="card-buttons">
-              <a href="#" class="button-about">Подробнее</a>
+              <a href="#" class="button-about brownSB">Подробнее</a>
               <a href="#" class=" button-favorite button-favorite-active">В избранном</a>
             </section>
             <div class="catalog-raiting">
@@ -125,8 +172,8 @@
               <p class="text-price">От 2500 ₽</p>
             </section>
             <section class="card-buttons">
-              <a href="#" class="button-about">Подробнее</a>
-              <a href="#" class="button-favorite">В избранное</a>
+              <a href="#" class="button-about brownSB">Подробнее</a>
+              <a href="#" class="button-favorite blueSB">В избранное</a>
             </section>
             <div class="catalog-raiting">
               <section class="stars">
@@ -145,8 +192,8 @@
               <p class="text-price">От 1500 ₽</p>
             </section>
             <section class="card-buttons">
-              <a href="#" class="button-about">Подробнее</a>
-              <a href="#" class="button-favorite">В избранное</a>
+              <a href="#" class="button-about brownSB">Подробнее</a>
+              <a href="#" class="button-favorite blueSB">В избранное</a>
             </section>
             <div class="catalog-raiting">
               <section class="stars">
@@ -159,18 +206,18 @@
         <div class="catalog-bottom"></div>
         <div class="catalog-pages">
           <div class="pages">
-            <ul>
-              <li class="selected-page">1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>...</li>
-              <li>10</li>
+            <ul class="page-list">
+              <li class="selected-page page-li">1</li>
+              <li class="page-li blueSB">2</li>
+              <li class="page-li blueSB">3</li>
+              <li class="page-li blueSB">4</li>
+              <li class="page-li blueSB">...</li>
+              <li class="page-li blueSB">10</li>
             </ul>
           </div>
           <div class="page-number-of-hotel">
-            <p class="pages-text"></p>
-            <select>
+            <p class="pages-text">Гостиниц на странице:</p>
+            <select class=select-page>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
