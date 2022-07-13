@@ -891,17 +891,10 @@ img {
   top: 3px;
 }
 
-.wireless-filter__item:checked:hover + label:after {
-  border: 3px solid #83B3D3;
-}
-
 .wireless_circle + label:before {
   border-radius: 50%;
 }
 
-.wireless-filter__item: {
-  background: #FFFFFF;
-}
 
 .infra {
   width: 150.43px;
@@ -1099,6 +1092,19 @@ img {
   color: #ffffff;
 }
 
+.apply:hover {
+  background: #68A2CA;
+}
+
+.apply:focus {
+  background: #68A2CA;
+}
+
+.apply:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #7DB54F;
+}
+
 .reset {
   margin-top: 21px;
   margin-left: 48px;
@@ -1112,7 +1118,31 @@ img {
   color: #ffffff;
 }
 
-.reset:hover {}
+.reset:hover {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.reset:focus {
+  border: 3px solid #83B3D3;
+}
+
+.reset:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.view:hover,
+.view-icon,
+.view-list:hover {
+  border-color: #000000;
+}
+
+.view:hover,
+.view-icon,
+.view-list:focus {
+  border-color: #000000;
+}
 
 .top-main {
   display: flex;
