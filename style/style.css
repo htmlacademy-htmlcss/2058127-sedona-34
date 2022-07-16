@@ -259,8 +259,8 @@ body {
 }
 
 .main-subtitle {
-  width: 230px;
-  height: 28px;
+  max-width: 230px;
+  max-height: 28px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -278,8 +278,8 @@ body {
 }
 
 .city-title {
-  width: 230px;
-  height: 56px;
+  max-width: 230px;
+  max-height: 56px;
   margin: 0;
   font-weight: 700;
   font-size: 24px;
@@ -290,24 +290,24 @@ body {
 .top-title {
   margin-top: 92px;
   margin-left: 85px;
-  width: 230px;
-  height: 56px;
+  max-width: 230px;
+  max-height: 56px;
   text-align: center;
 }
 
 .top-title-bridge {
   margin-top: 90px;
   margin-left: 85px;
-  width: 230px;
-  height: 56px;
+  max-width: 230px;
+  max-height: 56px;
   text-align: center;
 }
 
 .number-title {
   margin-top: 30px;
   margin-left: 85px;
-  height: 21px;
-  width: 230px;
+  max-height: 21px;
+  max-width: 230px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -317,12 +317,12 @@ body {
 .block-bottom {
   margin-top: 30px;
   margin-left: 85px;
-  width: 230px;
+  max-width: 230px;
 }
 
 .city-img {
   position: relative;
-  width: 66.66%;
+  max-width: 66.66%;
 }
 
 .city-img img {
@@ -332,7 +332,7 @@ body {
 .row-title {
   margin-top: 31px;
   margin-left: 85px;
-  width: 230px;
+  max-width: 230px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -344,7 +344,7 @@ body {
   margin-top: 29px;
   margin-left: 85px;
   margin-bottom: 81px;
-  width: 230px;
+  max-width: 230px;
   color: #333333;
 }
 
@@ -416,8 +416,8 @@ body {
 
 .second-row-top-title {
   margin: 100px auto 0 auto;
-  width: 230px;
-  height: 56px;
+  max-width: 230px;
+  max-height: 56px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -429,7 +429,7 @@ body {
 
 .second-row-title {
   margin-top: 30px;
-  height: 21px;
+  max-height: 21px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -442,8 +442,8 @@ body {
   margin-top: 30px;
   margin-left: 85px;
   margin-bottom: 102px;
-  width: 230px;
-  height: 42px;
+  max-width: 230px;
+  max-height: 42px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -475,7 +475,7 @@ body {
 }
 
 .road .second-row-top-title {
-  width: 200px;
+  max-width: 200px;
 }
 
 .grand-canyon {
@@ -490,7 +490,7 @@ body {
 }
 
 .grand-canyon .second-row-top-title {
-  width: 180px;
+  max-width: 180px;
 }
 
 .wonder {
@@ -510,8 +510,8 @@ body {
 }
 
 .wonder-description {
-  width: 592px;
-  height: 52px;
+  max-width: 592px;
+  max-height: 52px;
   margin-top: 29px;
   margin-left: 304px;
   font-weight: 400;
@@ -576,7 +576,7 @@ body {
 }
 
 .sub-title {
-  width: 404px;
+  max-width: 404px;
   margin: 0 auto;
   font-size: 30px;
   line-height: 36px;
@@ -591,7 +591,7 @@ body {
 
 .sub-description {
   margin: 38px auto 0 auto;
-  width: 475px;
+  max-width: 475px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -601,7 +601,7 @@ body {
 
 .sub-description-catalog {
   margin: 38px auto 0 auto;
-  width: 475px;
+  max-width: 475px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -632,8 +632,8 @@ body {
 
 .input {
   position: relative;
-  width: 600px;
-  height: 60px;
+  max-width: 600px;
+  max-height: 60px;
   font-weight: 400;
   font-size: 17px;
   line-height: 21px;
@@ -656,8 +656,8 @@ body {
 
 .input-catalog {
   position: relative;
-  width: 600px;
-  height: 60px;
+  max-width: 600px;
+  max-height: 60px;
   font-weight: 400;
   font-size: 17px;
   line-height: 21px;
@@ -767,8 +767,8 @@ body {
   position: relative;
   margin-top: 44px;
   margin-left: 249px;
-  width: 331px;
-  height: 40px;
+  max-width: 331px;
+  max-height: 40px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -898,6 +898,8 @@ body {
 .title-settings {
   margin-top: 0;
   margin-left: 0;
+  max-height: 26px;
+  max-width: 150px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -908,6 +910,9 @@ body {
 
 .checkbox-list {
   padding-top: 2px;
+  max-width: 150.43px;
+  max-height: 149px;
+
 }
 
 .visually-hidden {
@@ -1054,8 +1059,8 @@ body {
 .settings-wrapper {
   margin-top: 29px;
   margin-left: 180px;
-  width: 287px;
-  height: 48px;
+  max-width: 287px;
+  max-height: 48px;
 }
 
 .wrapper {
@@ -1103,7 +1108,7 @@ body {
   border-radius: 4px 0 0 4px;
   padding: 14px 0 10px 17px;
   border-right: 2px solid #ffffff;
-  width: 145px;
+  max-width: 145px;
 }
 
 .input-price-from {
@@ -1128,7 +1133,7 @@ body {
   border-radius: 0 4px 4px 0;
   padding: 14px 0 10px 16px;
   border-left: 1px solid #ffffff;
-  width: 144px;
+  max-width: 144px;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1370,8 +1375,8 @@ body {
   align-items: flex-start;
   padding: 20px;
   gap: 16px;
-  width: 340px;
-  height: 438px;
+  max-width: 340px;
+  max-height: 438px;
   background: #ffffff;
 }
 
@@ -1392,8 +1397,8 @@ body {
 
 .card-text {
   display: flex;
-  width: 300px;
-  height: 21px;
+  max-width: 300px;
+  max-height: 21px;
   margin-top: 16px;
   margin-left: 0;
   font-style: normal;
@@ -1423,8 +1428,8 @@ body {
 .button-about {
   margin-top: 7px;
   padding: 19px 26px;
-  width: 140px;
-  height: 38px;
+  max-width: 140px;
+  max-height: 38px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1443,8 +1448,8 @@ body {
   display: flex;
   margin-top: 7px;
   padding: 15px 20px;
-  width: 140px;
-  height: 38px;
+  max-width: 140px;
+  max-height: 38px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1469,8 +1474,8 @@ body {
   align-items: center;
   padding: 0;
   gap: 20px;
-  width: 300px;
-  height: 37px;
+  max-width: 300px;
+  max-height: 37px;
   margin-top: 15px;
 }
 
@@ -1485,8 +1490,8 @@ body {
   display: flex;
   margin-top: 17px;
   padding: 20px 21px;
-  width: 140px;
-  height: 38px;
+  max-width: 140px;
+  max-height: 38px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
