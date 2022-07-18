@@ -20,8 +20,8 @@
           <a href="catalog.html">Гостиницы</a>
         </nav>
         <nav class="user-navigation">
-          <a class="search" href="#" aria-label="Поиск"></a>
-          <a class="favorite" href="#"><span>12</span></a>
+          <a class="search" href="#" aria-label="Поиск"><span class="visually-hidden">Поиск.</span></a>
+          <a class="favorite" href="#"><span>12</span><span class="visually-hidden">Избранное.</span></a>
           <a class="button header-button" href="#" aria-label="Забронировать">Хочу сюда!</a>
         </nav>
       </header>
@@ -201,7 +201,7 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
@@ -227,7 +227,7 @@
                   <svg class="minus" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0v1h13V0H0Z" />
-                  </svg>
+                  </svg><span class="visually-hidden">Минус.</span>
                 </button>
                 <input class="adult-field field" type="number" value="2" step="1" name="number-adult" id="adult-field"
                   required />
@@ -235,7 +235,7 @@
                   <svg class="plus" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
-                  </svg>
+                  </svg><span class="visually-hidden">Плюс.</span>
                 </button>
               </div>
               <span class="form-label">
@@ -277,7 +277,7 @@
                 </button>
               </div>
             </div>
-            <button class="button-blue button-form-search">Найти</button>
+            <button class="button-blue button-form-search" type="button">Найти</button>
           </form>
         </section>
       </div>
